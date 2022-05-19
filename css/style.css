@@ -54,18 +54,18 @@ p{
 }
 
 .imagen1{
-    width: 50%;
+    width: 100%;
 }
 
 .imagen2{
-    width: 50%;
+    width: 100%;
 }
 
 .contenedor{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 0px 0px;
+    grid-template-rows: repeat(2,1fr);
+    gap:7px;
     grid-auto-flow: row;
     grid-template-areas:
         "parrafo imagen1"
@@ -92,7 +92,21 @@ p{
     font-size: 1rem;
 }
 
+.imagen1{
+    transition: 2s;
+}
 
+.imagen2{
+    transition: 2s;
+}
+
+.imagen1:hover{
+    transform: scale(1.2);
+}
+
+.imagen2:hover{
+    transform: scale(1.2); 
+}
 
 
 
